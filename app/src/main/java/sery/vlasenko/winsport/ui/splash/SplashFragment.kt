@@ -27,7 +27,7 @@ class SplashFragment : Fragment(R.layout.splash_layout) {
             )
 
             val mName = sp.getString(getString(R.string.auth_name), null)
-            val mAge = sp.getInt(getString(R.string.auth_age), -1)
+            val mAge = sp.getInt(getString(R.string.auth_height), -1)
             val mWeight = sp.getInt(getString(R.string.auth_weight), -1)
 
             CurrentUser.run {
@@ -50,6 +50,8 @@ class SplashFragment : Fragment(R.layout.splash_layout) {
                 } else {
                     findNavController().navigate(R.id.action_splashFragment_to_menuFragment)
                 }
+
+                requireActivity().window?.setBackgroundDrawableResource(R.drawable.back_1)
             }
         }
     }

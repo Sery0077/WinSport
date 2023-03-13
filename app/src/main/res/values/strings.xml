@@ -2,6 +2,15 @@
     <string name="app_name">WinSport</string>
     <string name="auth_prefs">auth_prefs</string>
     <string name="auth_name">auth_name</string>
-    <string name="auth_age">auth_age</string>
+    <string name="auth_height">auth_height</string>
     <string name="auth_weight">auth_weight</string>
+
+
+    <string name="start_training">Начало\nтренировки</string>
+
+
+    <string name="name_hint">ИМЯ</string>
+    <string name="height_hint">РОСТ</string>
+    <string name="weight_hint">ВЕС</string>
+    <string name="start">Начать</string>
 </resources>
