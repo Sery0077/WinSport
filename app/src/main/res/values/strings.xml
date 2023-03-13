@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WinSport</string>
+    <string name="auth_prefs">auth_prefs</string>
+    <string name="auth_name">auth_name</string>
+    <string name="auth_age">auth_age</string>
+    <string name="auth_weight">auth_weight</string>
 </resources>
