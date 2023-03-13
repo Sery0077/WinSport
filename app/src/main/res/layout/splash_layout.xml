@@ -24,7 +24,7 @@
         android:layout_height="12dp"
         android:layout_marginTop="20dp"
         android:progress="0"
-        android:progressDrawable="@drawable/progress_gradient"
+        android:progressDrawable="@drawable/rounded_progress_gradient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

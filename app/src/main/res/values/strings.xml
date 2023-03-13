@@ -13,4 +13,15 @@
     <string name="height_hint">РОСТ</string>
     <string name="weight_hint">ВЕС</string>
     <string name="start">Начать</string>
+
+
+    <string name="training">Тренировка</string>
+    <string name="analytics">Аналитика</string>
+    <string name="settings">Настройки</string>
+
+
+    <string name="day_purpose">Цель на день: </string>
+    <string name="points">Points </string>
+    <string name="progress">Прогресс: </string>
+    <string name="ruble_label">Р </string>
 </resources>

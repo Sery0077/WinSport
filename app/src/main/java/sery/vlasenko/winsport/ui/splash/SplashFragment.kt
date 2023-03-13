@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.*
 import sery.vlasenko.winsport.R
@@ -36,19 +37,20 @@ class SplashFragment : Fragment(R.layout.splash_layout) {
                 weight = mWeight
             }
 
-            delay(500)
+//            delay(500)
             progressBar.progress = 25
-            delay(1000)
+//            delay(1000)
             progressBar.progress = 75
-            delay(1200)
+//            delay(1200)
             progressBar.progress = 100
-            delay(300)
+//            delay(300)
 
             withContext(Dispatchers.Main) {
                 if (mName == null && mAge == -1 && mWeight == -1) {
                     findNavController().navigate(R.id.action_splashFragment_to_authFragment)
                 } else {
                     findNavController().navigate(R.id.action_splashFragment_to_menuFragment)
+
                 }
 
                 requireActivity().window?.setBackgroundDrawableResource(R.drawable.back_1)
