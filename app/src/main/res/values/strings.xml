@@ -24,4 +24,6 @@
     <string name="points">Points </string>
     <string name="progress">Прогресс: </string>
     <string name="ruble_label">Р </string>
+    <string name="notifications">Уведомления</string>
+    <string name="clear_data">Очистить\nданные</string>
 </resources>

@@ -53,5 +53,11 @@
     <fragment
         android:id="@+id/fragmentSettings"
         android:name="sery.vlasenko.winsport.ui.settings.FragmentSettings"
-        android:label="FragmentSettings" />
+        android:label="FragmentSettings" >
+        <action
+            android:id="@+id/action_fragmentSettings_to_authFragment"
+            app:destination="@id/authFragment"
+            app:popUpTo="@+id/main_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>
