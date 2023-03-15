@@ -28,4 +28,9 @@
     <string name="clear_data">Очистить\nданные</string>
     <string name="snackbar_error">Ошибка</string>
     <string name="snackbar_action">Повторить</string>
+    <string name="enter_data">внесите данные</string>
+    <string name="distance_hint">Расстояние (км)</string>
+    <string name="squats_hint">Приседания (раз)</string>
+    <string name="shots">Удары: </string>
+    <string name="insert">Внести</string>
 </resources>

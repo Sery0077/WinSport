@@ -17,87 +17,101 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/setting_label"
+        style="@style/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.25" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_training"
-        style="@style/Button"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_menu_button"
-        android:text="@string/training"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_analytics"
-        style="@style/Button"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_menu_button"
+        android:layout_marginTop="32dp"
         android:text="@string/analytics"
-        android:textSize="30sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_training"
-        tools:layout_editor_absoluteY="205dp" />
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_settings"
-        style="@style/Button"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/enter_data_label"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/enter_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_label" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_distance"
+        style="@style/EditText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_menu_button"
-        android:text="@string/settings"
-        android:textSize="30sp"
+        android:fontFamily="@font/eurostile_reg"
+        android:hint="@string/distance_hint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_analytics"
-        tools:layout_editor_absoluteY="205dp" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_data_label" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/day_purpose_label"
-        style="@style/Title"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_squats"
+        style="@style/EditText"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/day_purpose"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/eurostile_reg"
+        android:hint="@string/squats_hint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_settings" />
+        app:layout_constraintTop_toBottomOf="@+id/et_distance" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tw_points_numbers"
-        style="@style/Title"
+        android:id="@+id/shots_label"
+        style="@style/TextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="25000 "
-        android:textColor="@color/main_orange"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/points_label"
-        app:layout_constraintTop_toBottomOf="@id/day_purpose_label" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/points_label"
-        style="@style/Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/points"
-        app:layout_constraintEnd_toStartOf="@+id/tw_points_numbers"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/shots"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/tw_shots_multi"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/day_purpose_label" />
+        app:layout_constraintTop_toBottomOf="@+id/et_squats" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tw_shots_multi"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eurostile_hea"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/shots_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shots_label"
+        app:layout_constraintTop_toTopOf="@+id/shots_label"
+        tools:text="1X" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_insert"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_style"
+        android:backgroundTint="@color/main_orange"
+        android:text="@string/insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_shots_multi" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/progress_label"
@@ -117,12 +131,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        tools:text="15000 "
         android:textColor="@color/main_orange"
         app:layout_constraintBottom_toTopOf="@+id/progress_bar"
         app:layout_constraintEnd_toStartOf="@+id/currency_label"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/progress_label" />
+        app:layout_constraintStart_toEndOf="@+id/progress_label"
+        tools:text="15000 " />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/currency_label"

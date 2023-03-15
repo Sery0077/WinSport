@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import sery.vlasenko.winsport.R
 import sery.vlasenko.winsport.databinding.FragmentMenuBinding
+import sery.vlasenko.winsport.utils.CurrentUser
 
 class FragmentMenu: Fragment() {
 
@@ -18,7 +19,14 @@ class FragmentMenu: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentMenuBinding.inflate(inflater, container, false)
+        binding = FragmentMenuBinding.inflate(inflater)
+
+        CurrentUser.progress.observe(viewLifecycleOwner) {
+            binding.run {
+                twProgressSum.text = it.toString()
+                progressBar.progress = it / 25_000 * 100
+            }
+        }
 
         return binding.root
     }
