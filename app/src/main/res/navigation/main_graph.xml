@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_menuFragment_to_fragmentAnalytics"
             app:destination="@id/fragmentAnalytics" />
+        <action
+            android:id="@+id/action_menuFragment_to_fragmentAskTrainer"
+            app:destination="@id/fragmentAskTrainer" />
     </fragment>
     <fragment
         android:id="@+id/fragmentTraining"
@@ -60,4 +63,8 @@
             app:popUpTo="@+id/main_graph"
             app:popUpToInclusive="true"/>
     </fragment>
+    <fragment
+        android:id="@+id/fragmentAskTrainer"
+        android:name="sery.vlasenko.winsport.ui.askTrainer.FragmentAskTrainer"
+        android:label="FragmentAskTrainer" />
 </navigation>

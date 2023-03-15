@@ -42,5 +42,13 @@
 
     <string name="shots">Удары: </string>
     <string name="insert">Внести</string>
+    <string name="ask_trainer">Вопрос\nтренеру</string>
+    <string name="answer_story">История ответов</string>
+    <string name="answer">Ответ:</string>
+    <string name="answer_processing">Ответ обрабатывается</string>
+    <string name="ask_success">Вопрос задан!</string>
+    <string name="question_prefs">question_prefs</string>
+    <string name="question_id">question_id</string>
+    <string name="question">question</string>
 
 </resources>

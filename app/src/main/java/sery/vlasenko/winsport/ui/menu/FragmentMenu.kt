@@ -48,5 +48,9 @@ class FragmentMenu: Fragment() {
         binding.btnTraining.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_fragmentTraining)
         }
+
+        binding.btnAskTrainer.setOnClickListener {
+            findNavController().navigate(R.id.action_menuFragment_to_fragmentAskTrainer)
+        }
     }
 }
