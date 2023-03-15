@@ -26,4 +26,6 @@
     <string name="ruble_label">Р </string>
     <string name="notifications">Уведомления</string>
     <string name="clear_data">Очистить\nданные</string>
+    <string name="snackbar_error">Ошибка</string>
+    <string name="snackbar_action">Повторить</string>
 </resources>

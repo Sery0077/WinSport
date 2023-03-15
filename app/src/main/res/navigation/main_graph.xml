@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="sery.vlasenko.winsport.ui.splash.SplashFragment"
+        android:name="sery.vlasenko.winsport.ui.splash.FragmentSplash"
         android:label="SplashFragment">
         <action
             android:id="@+id/action_splashFragment_to_authFragment"
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/authFragment"
-        android:name="sery.vlasenko.winsport.ui.main.AuthFragment"
+        android:name="sery.vlasenko.winsport.ui.main.FragmentAuth"
         android:label="AuthFragment">
 
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
-        android:name="sery.vlasenko.winsport.ui.menu.MenuFragment"
+        android:name="sery.vlasenko.winsport.ui.menu.FragmentMenu"
         android:label="MenuFragment">
         <action
             android:id="@+id/action_menuFragment_to_fragmentSettings"

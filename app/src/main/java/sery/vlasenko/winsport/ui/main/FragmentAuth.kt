@@ -6,12 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import sery.vlasenko.winsport.R
 import sery.vlasenko.winsport.databinding.FragmentAuthBinding
 
-class AuthFragment : Fragment() {
+class FragmentAuth : Fragment() {
 
     private lateinit var binding: FragmentAuthBinding
 

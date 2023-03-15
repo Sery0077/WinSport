@@ -17,7 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/setting_label"
         style="@style/Title"

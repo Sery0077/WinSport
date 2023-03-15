@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import sery.vlasenko.winsport.R
 import sery.vlasenko.winsport.databinding.FragmentMenuBinding
 
-class MenuFragment: Fragment() {
+class FragmentMenu: Fragment() {
 
     private lateinit var binding: FragmentMenuBinding
 

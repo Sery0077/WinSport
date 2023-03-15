@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.*
 import sery.vlasenko.winsport.R
 import sery.vlasenko.winsport.utils.CurrentUser
 
-class SplashFragment : Fragment(R.layout.splash_layout) {
+class FragmentSplash : Fragment(R.layout.splash_layout) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setSplash(view)
