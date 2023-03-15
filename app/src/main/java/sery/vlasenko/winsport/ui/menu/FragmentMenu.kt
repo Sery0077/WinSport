@@ -23,7 +23,7 @@ class FragmentMenu: Fragment() {
 
         CurrentUser.progress.observe(viewLifecycleOwner) {
             binding.run {
-                twProgressSum.text = it.toString()
+                twProgressSum.text = "$it\u00A0"
                 progressBar.progress = it / 25_000 * 100
             }
         }

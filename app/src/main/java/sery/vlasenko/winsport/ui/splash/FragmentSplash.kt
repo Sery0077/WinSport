@@ -27,13 +27,15 @@ class FragmentSplash : Fragment(R.layout.splash_layout) {
             )
 
             val mName = sp.getString(getString(R.string.auth_name), null) ?: ""
-            val mAge = sp.getInt(getString(R.string.auth_height), -1)
-            val mWeight = sp.getInt(getString(R.string.auth_weight), -1)
+            val mAge = sp.getInt(getString(R.string.auth_height), 0)
+            val mWeight = sp.getInt(getString(R.string.auth_weight), 0)
+            val mProgress = sp.getInt(getString(R.string.auth_progress), 0)
 
             CurrentUser.run {
                 name = mName
                 age = mAge
                 weight = mWeight
+                progress.postValue(mProgress)
             }
 
 //            delay(500)
@@ -45,11 +47,10 @@ class FragmentSplash : Fragment(R.layout.splash_layout) {
 //            delay(300)
 
             withContext(Dispatchers.Main) {
-                if (mName == "" && mAge == -1 && mWeight == -1) {
+                if (mName == "" && mAge == 0 && mWeight == 0 && mProgress == 0) {
                     findNavController().navigate(R.id.action_splashFragment_to_authFragment)
                 } else {
                     findNavController().navigate(R.id.action_splashFragment_to_menuFragment)
-
                 }
 
                 requireActivity().window?.setBackgroundDrawableResource(R.drawable.back_1)

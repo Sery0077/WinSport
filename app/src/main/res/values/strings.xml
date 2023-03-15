@@ -1,36 +1,46 @@
 <resources>
     <string name="app_name">WinSport</string>
+
+    <!--  SharedPreferences  -->
     <string name="auth_prefs">auth_prefs</string>
     <string name="auth_name">auth_name</string>
     <string name="auth_height">auth_height</string>
     <string name="auth_weight">auth_weight</string>
+    <string name="auth_progress">auth_progress</string>
 
-
+    <!--Fragment auth-->
     <string name="start_training">Начало\nтренировки</string>
-
 
     <string name="name_hint">ИМЯ</string>
     <string name="height_hint">РОСТ</string>
     <string name="weight_hint">ВЕС</string>
+
     <string name="start">Начать</string>
 
-
+    <!--  Fragment menu  -->
     <string name="training">Тренировка</string>
     <string name="analytics">Аналитика</string>
-    <string name="settings">Настройки</string>
+    <string name="settings">Настройки\u00A0</string>
 
+    <string name="day_purpose">Цель на день:\u00A0</string>
+    <string name="points">Points\u00A0</string>
+    <string name="progress">Прогресс:\u00A0</string>
+    <string name="ruble_label">Р\u00A0</string>
 
-    <string name="day_purpose">Цель на день: </string>
-    <string name="points">Points </string>
-    <string name="progress">Прогресс: </string>
-    <string name="ruble_label">Р </string>
+    <!--    Fragment settings -->
     <string name="notifications">Уведомления</string>
     <string name="clear_data">Очистить\nданные</string>
+
+    <!--    SnackBar -->
     <string name="snackbar_error">Ошибка</string>
     <string name="snackbar_action">Повторить</string>
+
+    <!--    Fragment analytics-->
     <string name="enter_data">внесите данные</string>
     <string name="distance_hint">Расстояние (км)</string>
     <string name="squats_hint">Приседания (раз)</string>
+
     <string name="shots">Удары: </string>
     <string name="insert">Внести</string>
+
 </resources>
