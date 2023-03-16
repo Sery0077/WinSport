@@ -1,3 +1,54 @@
 <resources>
     <string name="app_name">WinSport</string>
+
+    <!--  SharedPreferences  -->
+    <string name="auth_prefs">auth_prefs</string>
+    <string name="auth_name">auth_name</string>
+    <string name="auth_height">auth_height</string>
+    <string name="auth_weight">auth_weight</string>
+    <string name="auth_progress">auth_progress</string>
+
+    <!--Fragment auth-->
+    <string name="start_training">Начало\nтренировки</string>
+
+    <string name="name_hint">ИМЯ</string>
+    <string name="height_hint">РОСТ</string>
+    <string name="weight_hint">ВЕС</string>
+
+    <string name="start">Начать</string>
+
+    <!--  Fragment menu  -->
+    <string name="training">Тренировка</string>
+    <string name="analytics">Аналитика</string>
+    <string name="settings">Настройки\u00A0</string>
+
+    <string name="day_purpose">Цель на день:\u00A0</string>
+    <string name="points">Points\u00A0</string>
+    <string name="progress">Прогресс:\u00A0</string>
+    <string name="ruble_label">Р\u00A0</string>
+
+    <!--    Fragment settings -->
+    <string name="notifications">Уведомления</string>
+    <string name="clear_data">Очистить\nданные</string>
+
+    <!--    SnackBar -->
+    <string name="snackbar_error">Ошибка</string>
+    <string name="snackbar_action">Повторить</string>
+
+    <!--    Fragment analytics-->
+    <string name="enter_data">внесите данные</string>
+    <string name="distance_hint">Расстояние (км)</string>
+    <string name="squats_hint">Приседания (раз)</string>
+
+    <string name="shots">Удары: </string>
+    <string name="insert">Внести</string>
+    <string name="ask_trainer">Вопрос\nтренеру</string>
+    <string name="answer_story">История ответов</string>
+    <string name="answer">Ответ:</string>
+    <string name="answer_processing">Ответ обрабатывается</string>
+    <string name="ask_success">Вопрос задан!</string>
+    <string name="question_prefs">question_prefs</string>
+    <string name="question_id">question_id</string>
+    <string name="question">question</string>
+
 </resources>
