@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/authFragment"
-        android:name="sery.vlasenko.winsport.ui.main.FragmentAuth"
+        android:name="sery.vlasenko.winsport.ui.auth.FragmentAuth"
         android:label="AuthFragment">
 
         <action

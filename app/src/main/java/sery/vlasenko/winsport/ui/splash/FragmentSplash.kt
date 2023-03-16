@@ -38,22 +38,22 @@ class FragmentSplash : Fragment(R.layout.splash_layout) {
                 progress.postValue(mProgress)
             }
 
-//            delay(500)
+            delay(500)
             progressBar.progress = 25
-//            delay(1000)
+            delay(1000)
             progressBar.progress = 75
-//            delay(1200)
+            delay(1200)
             progressBar.progress = 100
-//            delay(300)
+            delay(300)
 
             withContext(Dispatchers.Main) {
                 if (mName == "" && mAge == 0 && mWeight == 0 && mProgress == 0) {
                     findNavController().navigate(R.id.action_splashFragment_to_authFragment)
+                    requireActivity().window?.setBackgroundDrawableResource(R.drawable.back_auth)
                 } else {
                     findNavController().navigate(R.id.action_splashFragment_to_menuFragment)
+                    requireActivity().window?.setBackgroundDrawableResource(R.drawable.back_main)
                 }
-
-                requireActivity().window?.setBackgroundDrawableResource(R.drawable.back_1)
             }
         }
     }

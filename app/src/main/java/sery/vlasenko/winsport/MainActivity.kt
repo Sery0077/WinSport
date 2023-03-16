@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.work.PeriodicWorkRequest
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
+import com.onesignal.OneSignal
 import sery.vlasenko.winsport.utils.CurrentUser
 import sery.vlasenko.winsport.utils.ProgressCleaner
 import java.util.concurrent.TimeUnit
@@ -24,5 +25,8 @@ class MainActivity : AppCompatActivity() {
                 .putInt(getString(R.string.auth_progress), it)
                 .apply()
         }
+
+        OneSignal.initWithContext(this);
+        OneSignal.setAppId("34dc3743-cce3-4b8f-808a-f1c1b0365aba");
     }
 }
