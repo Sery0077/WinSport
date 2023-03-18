@@ -13,7 +13,10 @@ import com.google.android.material.snackbar.Snackbar
 import sery.vlasenko.winsport.R
 import sery.vlasenko.winsport.databinding.FragmentTrainingBinding
 import sery.vlasenko.winsport.model.DataResult
+import sery.vlasenko.winsport.utils.DayOfWeekHelper
 import sery.vlasenko.winsport.utils.SnackBarHelper
+import java.time.LocalDate
+import java.util.*
 
 class FragmentTraining: Fragment() {
 
@@ -54,6 +57,7 @@ class FragmentTraining: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         setClickers()
+        binding.twWeekday.text = DayOfWeekHelper.getDayOfWeekRU()
         super.onViewCreated(view, savedInstanceState)
     }
 
