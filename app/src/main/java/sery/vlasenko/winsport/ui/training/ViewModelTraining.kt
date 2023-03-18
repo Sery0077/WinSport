@@ -8,6 +8,7 @@ import kotlinx.coroutines.launch
 import sery.vlasenko.winsport.data.repository.TrainingRepository
 import sery.vlasenko.winsport.model.DataResult
 import sery.vlasenko.winsport.model.TrainingItem
+import sery.vlasenko.winsport.utils.DayOfWeekHelper
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -24,8 +25,7 @@ class ViewModelTraining : ViewModel() {
     }
 
     fun getTraining() {
-        val date = Calendar.getInstance().time
-        val day = SimpleDateFormat("EEEE", Locale.ENGLISH).format(date.time).lowercase()
+        val day = DayOfWeekHelper.getDayOfWeekEN()
 
         viewModelScope.launch {
             repository.getTraining(day).collect() {
